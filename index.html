@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+		<script src="script.js"></script>
+		
+		<script src="a/a.controller.js"></script>
+		<script src="b/b.controller.js"></script>
+	</head>
+
+	<body ng-app="abc" ng-controller="abcController">
+
+		<input ng-click='toSwitch("a/a.html")' type="button" value="A" />
+		<input ng-click='toSwitch("b/b.html")' type="button" value="B" />
+		
+		<br />
+		
+		<div ng-include="page"></div>
+		 
+	</body>
+</html>
